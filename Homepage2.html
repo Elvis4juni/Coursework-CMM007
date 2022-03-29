@@ -475,9 +475,125 @@ div.desc {
     </div>
     
     <div id="About" class="tabcontent">
-      <h3>About</h3>
-      <p>Who we are and what we do.</p>
-
+      <div class="about-section">
+        <h1>About Aberdeen Art Gallery</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="images/Aiden Brady & Anatol Modzelewski for BYTOM Fall_Winter 2013 Campaign.jpeg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Patrick Smith</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>jane@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="images/4 Career Woman Outfits For The Week Ahead - Harper and Harley.jpeg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Emily Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>mike@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="images/Gert.png" alt="John" style="width:100%">
+            <div class="container">
+              <h2>John Packricks</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>john@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <style>
+          body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-image: url(./);
+    }
+    
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+    
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: papayawhip;
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: grey;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+      </style>
       <footer>
         <h2>Follow Us</h2> 
         <li><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"></a></li> <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li> <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li> <li>...</li>

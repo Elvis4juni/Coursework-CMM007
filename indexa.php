@@ -1,3 +1,11 @@
+<?php
+
+  session_start();
+
+
+?>
+
+
 
 
 <!DOCTYPE html>
@@ -41,17 +49,13 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
+
 
 /* Center the avatar image inside this container */
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
+  padding: auto;
 }
 
 /* Avatar image */
@@ -63,14 +67,15 @@ img.avatar {
 /* Add padding to containers */
 .container {
   padding: 16px;
+  background-color: paleturquoise;
 }
 
 
 
 
 .body{
-	background-color: #f44336;
-	background-image: url();
+	
+	background-image: url(.)
 }
 </style>
 <body>
@@ -100,4 +105,8 @@ img.avatar {
 </body>
 </html>
 
+<?php
 
+$_SESSION['username'] = "#";
+echo $_SESSION['username'];
+?>

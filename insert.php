@@ -15,7 +15,7 @@ include("dbconnect.php");
 
 			$result=mysqli_query($db, $query);
 
-			header("Location: welcome.html");
+			header("Location: retrieve.php");
 			die;
 
 		}

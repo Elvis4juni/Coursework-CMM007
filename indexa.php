@@ -1,11 +1,32 @@
 <?php
 
-  session_start();
 
+
+
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+  $username=$_POST["username"];
+  $password=$_POST["password"];
+
+  $sql = "SELECT * FROM User WHERE username ='$username' AND password ='$password' usertype='admin' ";
+
+  $result=mysqli_query($data,$sql);
+
+  $row=mysqli_fetch_array($result);
+
+  if($row["usertype"]=="user");
+{
+  echo "user";
+}
+
+if($row["usertype"]=="admin")
+{
+   echo "admin";
+}
+
+}
 
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -74,7 +95,8 @@ img.avatar {
 
 
 .body{
-	
+	margin: 0;
+  padding: 0;
 	background-image: url(.)
 }
 </style>
@@ -105,8 +127,3 @@ img.avatar {
 </body>
 </html>
 
-<?php
-
-$_SESSION['username'] = "#";
-echo $_SESSION['username'];
-?>

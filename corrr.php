@@ -1,6 +1,6 @@
 <?php
 
-include ("dbconnect.php");
+include ("");
 
 
 //$OK="no";
@@ -20,19 +20,15 @@ $sql = "SELECT * FROM User WHERE username ='$username' AND password ='$password'
 //$result = $conn->query($sql);
 $result = mysqli_query($db,$sql);
 
-
-$row=mysqli_fetch_array($result);
-
-  if($row["usertype"]=="user");
-{
-  header("location:Homepage2.html");
+//if ($result->num_rows > 0) {
+if (mysqli_num_rows($result) > 0) {
+    header("location: Homepage2.html");
+}else {echo "incorrect username and password. ";
 }
 
-if($row["usertype"]=="admin")
-{
-   header("location:gallery.html");
-}
 
+
+$db -> close();
 
 
 ?>

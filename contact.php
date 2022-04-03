@@ -2,7 +2,7 @@
 
 include("dbconnect.php");
 
-	if(isset($_POST["#"]))
+	if(isset($_POST["sendto"]))
     {
 		//SOMETHING WAS POSTED
 		$fname = $_POST['firstname'];
@@ -11,11 +11,11 @@ include("dbconnect.php");
         $subject = $_POST['subject'];
 		
 			//save to database 
-			$query = "insert into # (firstname, lastname, country, subject) values ('$fname', '$lname', '$country', '$subject')";
+			$query = "insert into contact (firstname, lastname, country, subject) values ('$fname', '$lname', '$country', '$subject')";
 
 			$result=mysqli_query($db, $query);
 
-			header("Location: #");
+			header("Location: welcome.php");
 			die;
 
 		}

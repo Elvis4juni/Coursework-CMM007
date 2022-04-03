@@ -16,7 +16,7 @@
     
     /* Set height of body and the document to 100% */
     body, html {
-        background-image: url(..);
+        background-color: g;
       height: 100%;
       margin: 0;
       font-family: Arial;
@@ -41,7 +41,7 @@
     
     /* Style the tab content (and add height:100% for full page content) */
     .tabcontent {
-      color: white;
+      color: blueviolet;
       display: none;
       padding: 100px 20px;
       height: 100%;
@@ -55,11 +55,13 @@
     
     }
     #Stories {background-image: url(./images/part-of-the-garden-area.jpeg);}
-    #Contact {background-color: blue;}
+    #Contact {background-image: url(./images/the-saint-patrick-centre.jpeg);}
     #About {background-color: orange;}
     .Footer1{
       background-color: sienna;
-      
+      padding: 10px;
+      text-align: center;
+      color: white
     }
      </style>
     </head>
@@ -72,22 +74,47 @@
     <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
     <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
     
+   
     <div id="Home" class="tabcontent">
-
-      <div class="header2">
-        <h1>Share Your Stories</h1>
-        <p>My supercool header</p>
+       
+      <div class="header2"> 
+        <div class="search">
+          <input type="text" placeholder="Search.."> 
+          <input type="submit" value="Go">
+        </div>
+        <h1>WELCOME TO ABERDEEN GALLERY</h1>
+        <p>We are part of Aberdeen City Council’s Place: City Growth team and through our collections, buildings, exhibitions and events we strive to make a positive impact on the lives of everyone who lives, works, studies and visits our city. Our collections are recognised by UNESCO and the Scottish Government as nationally and internationally important. The historical records of Aberdeenshire Council are also preserved and managed by the team.   </p>
       </div>
         
         <button class="accordion">Section 1</button>
         <div class="bg-text">
             <style>
+              .search input[type=submit] {
+                text-align: left;
+                float: right;
+                display: block;
+                margin: 0;
+                padding: 15px;
+              }
+
+               .search input[type=text] {
+    border: 1px solid #ccc;
+    text-align: right;
+    float: right;
+    display: block;
+    width: 20%;
+    margin: 5;
+    padding: 14px;
+    height: auto;
+    
+  }
               .header2 {
+                
   padding: 60px;
-  text-align: center;
+  text-align: left;
   background: darkslategray;
-  color: white;
-  font-size: 30px;}
+  color: burlywood;
+  font-size: 15px;}
                 * {box-sizing: border-box}
                 body {font-family: Verdana, sans-serif; margin:0}
                 .mySlides {display: none}
@@ -269,7 +296,7 @@
 
           <button class="accordion">Section 2</button>
           <div class="panel">
-          <a target="_blank" href="file:///Applications/MAMP/htdocs/Quick%20Acesss/Log%20Code/gallery.html">
+          <a target="_blank" href="http://localhost:8888/Quick%20Acesss/Log%20Code/gallery.html">
           <img src="images/100 beste Plakate e_V.jpeg" alt="Cinque Terre" width="600" height="400">
           </a>
           <div class="desc">Check out Collections</div>
@@ -277,7 +304,7 @@
           
           <button class="accordion">Section 3</button>
           <div class="panel">
-          <a target="_blank" href="img_forest.jpg">
+          <a target="_blank" href="file:///Applications/MAMP/htdocs/Quick%20Acesss/Log%20Code/gallery.html">
           <img src="images/Angel Wings Wall Decor Oversize Paintings Large White Set 2 _ Etsy.jpeg" alt="Forest" width="600" height="400">
           </a>
           <div class="desc">Add a description of the image here</div>
@@ -313,8 +340,12 @@
             
               <div class="Footer1">
                 <footer>
-                    <h2>Follow Us</h2>                     
-                   <li><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"></a></li> <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li> <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li> <li>...</li>   
+                    <h2>Follow Us</h2> 
+                    <ul>                    
+                    <li><a href="http://www.facebook.com"><img src="images/1024px-Facebook_Logo_(2019).webp"  width="60" height="50"</a></li> 
+                    <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li>
+                     <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li> 
+                    </ul> 
                 </footer>
               </div>
 
@@ -451,9 +482,14 @@ div.desc {
               </form>
             </div>
             
+          <div class="Footer1">
+            <footer>
+                <h2>Follow Us</h2>                     
+               <li><a href="#" class="fa fa-facebook"></a><img src="facebooklogo.png" alt="Facebook"></a></li> <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li> <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li> <li>...</li>   
+            </footer>
+          </div>
             </body>
           </div>
-
 
 
 
@@ -464,16 +500,119 @@ div.desc {
     </div>
     
     <div id="Contact" class="tabcontent">
-      <h3>Contact</h3>
-      <p>Get in touch, or swing by for a cup of coffee.</p>
 
-      <footer>
+      <div class="header">
+        <h1>Share Your Stories</h1>
+        <p>My supercool header</p>
+      </div>
+      <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          background-position: url(/L);
+        }
         
-        <h2>Follow Us</h2> 
-        <li><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"></a></li> <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li> <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li> <li>...</li>
-    </footer>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Style inputs */
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        /* Style the container/contact section */
+        .container {
+          border-radius: 5px;
+          background-color: darkcyan;
+          padding: 10px;
+        }
+        
+        /* Create two columns that float next to eachother */
+        .column {
+          float: left;
+          width: 50%;
+          margin-top: 6px;
+          padding: 20px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Responsive Contact Section</h2>
+        <p>Resize the browser window to see the effect.</p>
+        
+        <div class="container">
+          <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/100 beste Plakate e_V.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="usa">Scotland</option>
+                  <option value="usa">Nigeria</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="Footer1">
+          <footer>
+              <h2>Follow Us</h2>                     
+             <li><a href="#" class="fa fa-facebook"></a><img src="facebooklogo.png" alt="Facebook"></a></li> <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li> <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li> <li>...</li>   
+          </footer>
+        </div>
     
-    </div>
+  </div>
     
     <div id="About" class="tabcontent">
       <div class="about-section">
@@ -595,10 +734,12 @@ div.desc {
       }
     }
       </style>
-      <footer>
-        <h2>Follow Us</h2> 
-        <li><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"></a></li> <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li> <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li> <li>...</li>
-    </footer>
+      <div class="Footer1">
+        <footer>
+            <h2>Follow Us</h2>                     
+           <li><a href="#" class="fa fa-facebook"></a><img src="facebooklogo.png" alt="Facebook"></a></li> <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li> <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li> <li>...</li>   
+        </footer>
+      </div>
     
     </div>
     

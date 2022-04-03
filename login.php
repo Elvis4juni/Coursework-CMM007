@@ -30,7 +30,7 @@ $row=mysqli_fetch_array($result);
 
 if($row["usertype"]=="admin")
 {
-   header("location:gallery.html");
+   header("location:Admin.html");
 }
 
 

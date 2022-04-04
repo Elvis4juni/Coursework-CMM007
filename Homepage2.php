@@ -1,4 +1,12 @@
 
+<?php
+
+session_start();
+echo "Welcome User" . $_SESSION["username"]
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +85,9 @@
     
    
     <div id="Home" class="tabcontent">
-       
+      
+       <a href="logout.php">LogOut</a>
+  
       <div class="header2"> 
         <div class="search">
           <input type="text" placeholder="Search.."> 
@@ -457,8 +467,8 @@ div.desc {
             <body>
             
                 <div class="header">
-                    <h1>Share Your Stories</h1>
-                    <p>My supercool header</p>
+                    <h1>SHARE YOUR STORIES</h1>
+                    <p>Feel free to share your museum experience and check other peoples comments</p>
                   </div>
             
             <div class="container">
@@ -626,8 +636,13 @@ div.desc {
     <div id="About" class="tabcontent">
       <div class="about-section">
         <h1>About Aberdeen Art Gallery</h1>
-        <p>Some text about who we are and what we do.</p>
-        <p>Resize the browser window to see that this page is responsive by the way.</p>
+        <p>Aberdeen Art Gallery is the main visual arts exhibition space in the city of Aberdeen, Scotland.
+           It was founded in 1884, in a building designed by Alexander Marshall Mackenzie, with a sculpture court added in 1905. In 1900 it received the art collection of Alexander Macdonald, a local granite merchant. The gallery is noted for its fine collection of modern Scottish and international art, 
+           including works by Ken Currie, Gilbert & George, Ivor Abrahams, Bridget Riley and Bruce McLean. .</p>
+           <h2>Short History</h2>
+        <p>In April 2020, the gallery made 50 artworks available digitally via the Smartify app.[3]
+
+          In October 2020, Aberdeen Art Gallery was named one of the five winners of the 2020 ArtFund Museum of the Year Award. ArtFund increased the prize money to £200,000 and changed the format of the award to five winners in response to the challenges faced by the museum sector during the Coronavirus Pandemic. </p>
       </div>
       
       <h2 style="text-align:center">Our Team</h2>

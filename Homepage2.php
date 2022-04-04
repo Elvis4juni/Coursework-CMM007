@@ -2,7 +2,12 @@
 <?php
 
 session_start();
-echo "Welcome User" . $_SESSION["username"]
+if($_SESSION['username']){
+echo "Welcome User" . $_SESSION["username"];
+}
+else{
+  header("location:");
+}
 
 ?>
 
@@ -324,10 +329,10 @@ echo "Welcome User" . $_SESSION["username"]
 
          <button class="accordion">Section 4</button>
          <div class="panel">
-         <a target="_blank" href="img_lights.jpg">
+         <a target="_blank" href="http://localhost:8888/Quick%20Acesss/Log%20Code/gallery2.html">
          <img src="images/Modern Wall Art Pictures Canvas Painting Decoration Golden Butterfly Prints Poster for Living Room Nordic Bedroom Home Decor.jpeg" alt="Northern Lights" width="600" height="400">
          </a>
-         <div class="desc">Add a description of the image here</div>
+         <div class="desc">Check out collections</div>
          </div>
 
          <button class="accordion">UPLOAD YOUR FILE HERE</button>
@@ -484,6 +489,8 @@ div.desc {
                   <option value="australia">Australia</option>
                   <option value="canada">Canada</option>
                   <option value="usa">USA</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Scotland">Scotland</option>
                 </select>
             
                 <label for="subject">Subject</label>

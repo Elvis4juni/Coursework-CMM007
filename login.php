@@ -23,14 +23,17 @@ $result = mysqli_query($db,$sql);
 
 $row=mysqli_fetch_array($result);
 
-  if($row["usertype"]=="user");
+  if($row["usertype"]=="user")
 {
   header("location:Homepage2.php");
 }
-
+else{echo "incorrect username and password. ";
+}
 if($row["usertype"]=="admin")
 {
    header("location:Admin.html");
+}
+else{echo "incorrect username and password. ";
 }
 
 

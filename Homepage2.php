@@ -1,17 +1,14 @@
 
 <?php
+include("dbconnect.php");
 
 session_start();
 if($_SESSION['username']){
-echo "Welcome User" . $_SESSION["username"];
+echo "Welcome User " . $_SESSION["username"];
 }
-else{
-  header("location:");
-}
+
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

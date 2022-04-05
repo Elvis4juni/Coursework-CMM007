@@ -16,7 +16,7 @@ include("dbconnect.php");
 
 			$result=mysqli_query($db, $query);
 
-			header("Location: indexa.php");
+			header("Location: index.php");
 			die;
 
 		}else

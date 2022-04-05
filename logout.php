@@ -2,5 +2,5 @@
 
 session_start();
 unset($_SESSION['username']);
-header("Location:indexa.php");
+header("Location:index.php");
 ?>

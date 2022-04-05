@@ -521,8 +521,8 @@ div.desc {
     <div id="Contact" class="tabcontent">
 
       <div class="header">
-        <h1>Share Your Stories</h1>
-        <p>My supercool header</p>
+        <h1>FEEL FREE TO CONTACT US</h1>
+        <p>Drop your contact details</p>
       </div>
       <style>
         body {
@@ -589,13 +589,11 @@ div.desc {
         </head>
         <body>
         
-        <h2>Responsive Contact Section</h2>
-        <p>Resize the browser window to see the effect.</p>
         
         <div class="container">
           <div style="text-align:center">
             <h2>Contact Us</h2>
-            <p>Swing by for a cup of coffee, or leave us a message:</p>
+            <p>Love our artwork? or leave us a message:</p>
           </div>
           <div class="row">
             <div class="column">
